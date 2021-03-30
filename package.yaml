@@ -28,7 +28,7 @@ library:
 executables:
   app-one:
     main:                AppOne.hs
-    source-dirs:         app
+    source-dirs:         app/one
     ghc-options:
     - -main-is AppOne
     - -threaded
@@ -38,7 +38,7 @@ executables:
     - two-exe
   app-two:
     main:                AppTwo.hs
-    source-dirs:         app
+    source-dirs:         app/two
     ghc-options:
     - -main-is AppTwo
     - -threaded

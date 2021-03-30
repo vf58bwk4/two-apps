@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 70873fa6eb02e099c99632ea9f8ea25f9b72b5515c835077f6a3bd9f2c7549c1
+-- hash: b255a566521eedf770aadc6dd12ce97cdd7e911fc24f519cf84d368195e46511
 
 name:           two-exe
 version:        0.1.0.0
@@ -39,10 +39,9 @@ library
 executable app-one
   main-is: AppOne.hs
   other-modules:
-      AppTwo
       Paths_two_exe
   hs-source-dirs:
-      app
+      app/one
   ghc-options: -main-is AppOne -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
@@ -52,10 +51,9 @@ executable app-one
 executable app-two
   main-is: AppTwo.hs
   other-modules:
-      AppOne
       Paths_two_exe
   hs-source-dirs:
-      app
+      app/two
   ghc-options: -main-is AppTwo -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
