@@ -1,4 +1,10 @@
 cradle:
   stack:
-  - path: .
+  - path: "./src"
+    component: "two-exe:lib"
+  - path: "./app/one"
     component: "two-exe:exe:app-one"
+  - path: "./app/two"
+    component: "two-exe:exe:app-two"
+  - path: "./test"
+    component: "two-exe:test:two-exe-test"
